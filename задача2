@@ -1,0 +1,40 @@
+#include <iostream>
+
+int main() {
+   
+   float x;
+   float y;
+   float x1;
+   float x2;
+   float h;
+   int f;
+   x = x1;
+   
+   std::cout << "Write here the start of the interval: ";
+   std::cin >> x1;
+   std::cout << "Write here the end of the interval: ";
+   std::cin >> x2;
+   std::cout << "Write here a step: ";
+   std::cin >> h;
+   
+   while (x <= x2) {
+       if (x != 0) {
+            
+            y = 0,23 * (x*x) + x;
+            std::cout << x << std::endl;
+            std::cout << y << std::endl;
+            x = x + h;
+            std::cout << "_____________________" << std::endl;
+        }
+        else {
+            
+            std::cout << x << std::endl;
+            std::cout << "y is not ever exist" << std::endl;
+            x = x + h;
+            std::cout << "_____________________" << std::endl;
+        }
+    std::cin >> f;
+    return 0;
+}
+
+}
