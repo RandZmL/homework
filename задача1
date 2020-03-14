@@ -1,0 +1,32 @@
+#include <fstream>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	int n;
+	int i;
+	int j;
+
+	cout << "Enter a number of strings here: ";
+	cin >> n;
+	ofstream file;
+	file.open ("c:\\alex\\source\\repos\\homework2semestr\\hw.txt");
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j <= i;) {
+			cout << "0";
+			//file << "0";
+			j++;
+        }
+		cout << endl;
+		file << endl;
+	}
+
+	file.close;
+	getchar();
+	getchar();
+
+	return 0;
+}
